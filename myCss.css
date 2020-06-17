@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(112, 189, 130);
+    display: flex;
+    height: 100vh;
+    transition: all .6s ease;
+    position: relative;
+}
+
+.login-header{
+    color: rgb(252, 247, 247);
+    
+    font-family: cursive;
+    font-size: 48px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-header span{
+    color: rgb(159, 236, 241);
+}
+
+.field-username,
+.field-email,
+.field-password,
+.field-thanks{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: white;
+    height: 40px;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 7px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 17px;
+    transition: all .6s ease;
+}
+
+.field-username input,
+.field-email input,
+.field-password input,
+.field-thanks input{
+    background: none;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    outline: none;
+    border: none;
+}
+
+.field-username i,
+.field-email i,
+.field-password i,
+.field-thanks i{
+    padding: 10px;
+    cursor: pointer;
+}
+
+div.inactive{
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 50%);
+}
+
+div.active{
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(-50%, -50%);
+}
+
+#output{
+    color: white;
+    font-family: monospace;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes shake{
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(10deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
