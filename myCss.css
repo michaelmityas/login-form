@@ -101,7 +101,7 @@ div.active{
     }
 }
 
-@media (max-width: 312px){
+@media (max-width: 425px){
     .login-header{
         top: 25%;
     }
