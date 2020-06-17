@@ -110,12 +110,29 @@ div.active{
     .field-email,
     .field-password,
     .field-thanks{
-        width: 290px;
+        width: 90%;
+    }
+
+    #output{
+        top: 65%;
+        font-size:8px ;
+    }
+}
+
+@media (max-width: 321px){
+    .login-header{
+        top: 25%;
+    }
+
+    .field-username,
+    .field-email,
+    .field-password,
+    .field-thanks{
+        width: 90%;
     }
 
     #output{
         top: 65%;
         font-size:7px ;
-        width: 100% auto;
     }
 }
