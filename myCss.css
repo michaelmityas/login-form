@@ -101,7 +101,7 @@ div.active{
     }
 }
 
-@media (max-width: 425px){
+@media screen and (max-width: 500px){
     .login-header{
         top: 25%;
     }
@@ -110,19 +110,18 @@ div.active{
     .field-email,
     .field-password,
     .field-thanks{
-        width: 90%;
+        width: 80%;
     }
 
     #output{
         top: 65%;
-        font-size:8px ;
+        width: 90%;
+        font-size: 14px;
+        text-align: center;
     }
 }
 
-@media (max-width: 321px){
-    .login-header{
-        top: 25%;
-    }
+@media screen and (max-width: 320px){
 
     .field-username,
     .field-email,
@@ -132,7 +131,6 @@ div.active{
     }
 
     #output{
-        top: 65%;
-        font-size:7px ;
+        font-size: 12px;
     }
 }
